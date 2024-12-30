@@ -1,0 +1,5 @@
+Der Code wurde in drei verschiedenen Files hochgeladen. Da der Code von aufbauend ist und geiwsse Variabeln und funktionen wiederverwendet werden, sollte folgende Rheienfolge beim ausführen des Codes eingehalten werden:  
+1. individual resources
+2. Resource combinations
+3. Testing significance
+4. Robustness analysis
