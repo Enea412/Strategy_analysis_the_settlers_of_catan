@@ -88,7 +88,7 @@ ggplot(results, aes(x = m, y = WBI_Ratio)) +
     plot.title = element_text(hjust = 0.5)
   )
 
-#### Regression Analysis
+#### Regression analysis for variation of m
 
 # Perform regression analysis
 run_regression <- function(results) {
@@ -273,22 +273,6 @@ ggplot(results$lambda_results, aes(x = Lambda, y = WBI_Ratio)) +
   ) +
   theme(plot.title = element_text(hjust = 0.5))
 
-#########################################################
-######         Different Alpha Values         ###########
-#########################################################
-
-
-# Plot for alpha values
-ggplot(results$alpha_results, aes(x = Alpha, y = WBI_Ratio)) +
-  geom_line() +
-  geom_point() +
-  theme_minimal() +
-  labs(
-    title = "WBI-ratio bei Variation von Alpha",
-    x = "Alpha (α)",
-    y = "WBI-ratio"
-  ) +
-  theme(plot.title = element_text(hjust = 0.5))
 
 ### Regression lambda:
 
@@ -311,6 +295,23 @@ ggplot(results$lambda_results, aes(x = Lambda, y = WBI_Ratio)) +
   ) +
   theme(plot.title = element_text(hjust = 0.5))
 
+
+#########################################################
+######         Different Alpha Values         ###########
+#########################################################
+
+
+# Plot for alpha values
+ggplot(results$alpha_results, aes(x = Alpha, y = WBI_Ratio)) +
+  geom_line() +
+  geom_point() +
+  theme_minimal() +
+  labs(
+    title = "WBI-ratio bei Variation von Alpha",
+    x = "Alpha (α)",
+    y = "WBI-ratio"
+  ) +
+  theme(plot.title = element_text(hjust = 0.5))
 
 #### Regression alpha:
 
